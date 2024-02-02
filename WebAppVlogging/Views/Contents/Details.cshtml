@@ -1,0 +1,42 @@
+﻿@model WebAppVlogging.Models.Content
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Content</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Vname)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Vname)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Vtitle)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Vtitle)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PubDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PubDate)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.VId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
